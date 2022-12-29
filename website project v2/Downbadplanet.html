@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="dark"
+  style="
+    --emoji-background-url: url(&#39;https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/images/emoji/apple.png&#39;);
+    --vh: 9.04px;
+  "
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script
+      type="text/javascript"
+      async=""
+      src="./Downbadplanet_files/js"
+    ></script>
+    <script
+      src="./Downbadplanet_files/datadog-rum-v4.js.download"
+      type="text/javascript"
+    ></script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <style type="text/css" id="operaUserStyle"></style>
+    <script>
+      window.DD_RUM &&
+        window.DD_RUM.init({
+          clientToken: "pub242ac9be3c0f05f0db2c696a205084c3",
+          applicationId: "fa13aad8-deb0-4679-a2b4-8517a5677c95",
+          site: "datadoghq.com",
+          service: "downbadplanet.com",
+          env: "prod",
+          sampleRate: 1,
+          sessionReplaySampleRate: 1,
+          trackInteractions: true,
+          trackResources: true,
+          trackLongTasks: true,
+          defaultPrivacyLevel: "mask-user-input",
+        });
+
+      window.DD_RUM && window.DD_RUM.startSessionReplayRecording();
+    </script>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DBP</title>
+    <link rel="icon" href="" type="image/ico" />
+    <link
+      rel="alternate"
+      href="http://127.0.0.1:5500/downbadplanet.com"
+      hreflang="en"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kick.com" />
+    <meta property="og:title" content="Kick" />
+    <meta property="og:site_name" content="Kick" />
+    <meta property="og:description" content="downbadplanet." />
+    <meta property="og:image" content="" />
+    <meta name="description" content="downbadplanet." />
+    <meta name="twitter:description" content="downbadplanet." />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:card" content="https://kick.com" />
+    <meta name="twitter:title" content="Kick" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="./Downbadplanet_files/css2" rel="stylesheet" />
+    <script type="application/javascript">
+      window.app_name = "Kick";
+      window.assetUrl =
+        "https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/";
+      window.analytics = JSON.parse(
+        '{"endpoint":"https:\/\/api.kick.com","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4ODk0MCwiZXhwaXJlc19hdCI6IjIwMjItMTItMzBUMDE6MjI6MzguODI3NTIyWiJ9.bEBgBvce925tQ8W85yHPzR-xTdItpD0TB5qUjXBStkA"}'
+      );
+      window.server_timezone = "UTC";
+      window.translations = JSON.parse(
+        '[{"name":"Chinese","code":"zh"},{"name":"English","code":"en"},{"name":"Finnish","code":"fi"},{"name":"French","code":"fr"},{"name":"German","code":"de"},{"name":"Hindi","code":"hi"},{"name":"Indonesian","code":"id"},{"name":"Korean","code":"ko"},{"name":"Polish","code":"pl"},{"name":"Portuguese","code":"pt"},{"name":"Russian","code":"ru"},{"name":"Spanish","code":"es"},{"name":"Turkish","code":"tr"},{"name":"Vietnamese","code":"vi"}]'
+      );
+    </script>
+    <script type="application/ld+json">
+      [
+        {
+          "@id": "",
+          "@type": "Organization",
+          "name": "Kick",
+          "url": ""
+        }
+      ]
+    </script>
+    <script type="text/javascript">
+      const Ziggy = {
+        url: "https:\/\/downbadplanet.com",
+        port: null,
+        defaults: {},
+        routes: {
+          "ignition.healthCheck": {
+            uri: "_ignition\/health-check",
+            methods: ["GET", "HEAD"],
+          },
+          "ignition.executeSolution": {
+            uri: "_ignition\/execute-solution",
+            methods: ["POST"],
+          },
+          "ignition.shareReport": {
+            uri: "_ignition\/share-report",
+            methods: ["POST"],
+          },
+          "ignition.scripts": {
+            uri: "_ignition\/scripts\/{script}",
+            methods: ["GET", "HEAD"],
+          },
+          "ignition.styles": {
+            uri: "_ignition\/styles\/{style}",
+            methods: ["GET", "HEAD"],
+          },
+          "cashier.payment": {
+            uri: "stripe\/payment\/{id}",
+            methods: ["GET", "HEAD"],
+          },
+          "cashier.webhook": { uri: "stripe\/webhook", methods: ["POST"] },
+          "vapor-ui": {
+            uri: "vapor-ui\/{view?}",
+            methods: ["GET", "HEAD"],
+            wheres: { view: "(.*)" },
+          },
+          "nova.login": { uri: "nova\/login", methods: ["POST"] },
+          "nova.logout": { uri: "nova\/logout", methods: ["GET", "HEAD"] },
+          "nova.password.request": {
+            uri: "nova\/password\/reset",
+            methods: ["GET", "HEAD"],
+          },
+          "nova.password.email": {
+            uri: "nova\/password\/email",
+            methods: ["POST"],
+          },
+          "nova.password.reset": {
+            uri: "nova\/password\/reset\/{token}",
+            methods: ["GET", "HEAD"],
+          },
+          login: { uri: "login", methods: ["GET", "HEAD"] },
+          logout: { uri: "logout", methods: ["POST"] },
+          register: { uri: "register", methods: ["GET", "HEAD"] },
+          "password.request": {
+            uri: "password\/reset",
+            methods: ["GET", "HEAD"],
+          },
+          "password.email": { uri: "password\/email", methods: ["POST"] },
+          "password.reset": {
+            uri: "password\/reset\/{token}",
+            methods: ["GET", "HEAD"],
+          },
+          "password.update": { uri: "password\/reset", methods: ["POST"] },
+          "password.confirm": {
+            uri: "password\/confirm",
+            methods: ["GET", "HEAD"],
+          },
+          "api.search": { uri: "api\/search", methods: ["GET", "HEAD"] },
+          "channel.chat": {
+            uri: "api\/v1\/channels\/{channel}\/chat",
+            methods: ["GET", "HEAD"],
+          },
+          user: { uri: "api\/v1\/user", methods: ["GET", "HEAD"] },
+          "channelLink.reorder": {
+            uri: "api\/v1\/channel-links\/reorder",
+            methods: ["POST"],
+          },
+          "message.react": { uri: "api\/v1\/message-react", methods: ["POST"] },
+          "channels.followed": {
+            uri: "api\/v1\/channels\/followed",
+            methods: ["GET", "HEAD"],
+          },
+          "channel.muteUser": {
+            uri: "api\/v1\/channels\/{channel}\/mute-user",
+            methods: ["POST"],
+          },
+          "channel.unmuteUser": {
+            uri: "api\/v1\/channels\/{channel}\/unmute-user",
+            methods: ["POST"],
+          },
+          "channel.followers": {
+            uri: "api\/v1\/channels\/{channel}\/followers",
+            methods: ["GET", "HEAD"],
+            bindings: { channel: "slug" },
+          },
+          "channel.addBadge": {
+            uri: "api\/v1\/channels\/{channel}\/add-badge",
+            methods: ["POST"],
+            bindings: { channel: "slug" },
+          },
+          "channel.removeBadge": {
+            uri: "api\/v1\/channels\/{channel}\/remove-badge",
+            methods: ["POST"],
+            bindings: { channel: "slug" },
+          },
+          "channel.getFollowersForBadge": {
+            uri: "api\/v1\/channels\/{channel}\/get-followers-for-badge\/{badge}",
+            methods: ["GET", "HEAD"],
+            bindings: { channel: "slug" },
+          },
+          "channels.recommended": {
+            uri: "api\/v1\/channels\/recommended",
+            methods: ["GET", "HEAD"],
+          },
+          "channel.send": {
+            uri: "api\/v1\/channels\/{channel}\/chat",
+            methods: ["POST"],
+          },
+          "channel.subscribe": {
+            uri: "api\/v1\/channels\/user\/subscribe",
+            methods: ["POST"],
+          },
+          "channel.unsubscribe": {
+            uri: "api\/v1\/channels\/user\/unsubscribe",
+            methods: ["POST"],
+          },
+          "user.unsubscribe": {
+            uri: "api\/v1\/channel\/unsubscribe",
+            methods: ["POST"],
+          },
+          "contentmoderation.reportcontent": {
+            uri: "api\/v1\/report-content",
+            methods: ["POST"],
+          },
+          "channel.followingSortBy": {
+            uri: "api\/v1\/channels\/following\/{id}",
+            methods: ["GET", "HEAD"],
+          },
+          "channel.videoListPaginate": {
+            uri: "api\/v1\/channels\/videoList",
+            methods: ["GET", "HEAD"],
+          },
+          "chatroom.show": {
+            uri: "api\/v1\/{channel}\/chatroom",
+            methods: ["GET", "HEAD"],
+          },
+          "chatroom.update": {
+            uri: "api\/v1\/chatrooms\/{chatroom}",
+            methods: ["PUT"],
+            bindings: { chatroom: "id" },
+          },
+          "chatmessages.store": {
+            uri: "api\/v1\/chat-messages",
+            methods: ["POST"],
+          },
+          "chatmessages.destroy": {
+            uri: "api\/v1\/chat-messages\/{id}",
+            methods: ["POST"],
+          },
+          "channel-links.store": {
+            uri: "api\/v1\/channel-links",
+            methods: ["POST"],
+          },
+          "channel-links.update": {
+            uri: "api\/v1\/channel-links\/{channel_link}",
+            methods: ["PUT", "PATCH"],
+          },
+          "channel-links.destroy": {
+            uri: "api\/v1\/channel-links\/{channel_link}",
+            methods: ["DELETE"],
+          },
+          "channels.show": {
+            uri: "api\/v1\/channels\/{channel}",
+            methods: ["GET", "HEAD"],
+          },
+          "channels.links": {
+            uri: "api\/v1\/channels\/{channel}\/links",
+            methods: ["GET", "HEAD"],
+          },
+          "nova.terms": {
+            uri: "api\/v1\/nova\/terms",
+            methods: ["GET", "HEAD"],
+          },
+          "user.show": {
+            uri: "api\/v1\/users\/{username}",
+            methods: ["GET", "HEAD"],
+          },
+          "categories.get": {
+            uri: "api\/v1\/categories",
+            methods: ["GET", "HEAD"],
+          },
+          "categories.top": {
+            uri: "api\/v1\/categories\/top",
+            methods: ["GET", "HEAD"],
+          },
+          "user.categories.top": {
+            uri: "api\/v1\/user\/categories\/top",
+            methods: ["GET", "HEAD"],
+          },
+          "categories.show": {
+            uri: "api\/v1\/categories\/{category}",
+            methods: ["GET", "HEAD"],
+            bindings: { category: "slug" },
+          },
+          "categories.livestreams": {
+            uri: "api\/v1\/categories\/{category}\/livestreams",
+            methods: ["GET", "HEAD"],
+            bindings: { category: "slug" },
+          },
+          "user.livestreams": {
+            uri: "api\/v1\/user\/livestreams",
+            methods: ["GET", "HEAD"],
+          },
+          "subcategories.get": {
+            uri: "api\/v1\/subcategories",
+            methods: ["GET", "HEAD"],
+          },
+          "subcategories.show": {
+            uri: "api\/v1\/subcategories\/{subcategory}",
+            methods: ["GET", "HEAD"],
+            bindings: { subcategory: "slug" },
+          },
+          "video.show": {
+            uri: "api\/v1\/video\/{video}",
+            methods: ["GET", "HEAD"],
+            bindings: { video: "uuid" },
+          },
+          "video.delete": {
+            uri: "api\/v1\/video\/{video}",
+            methods: ["DELETE"],
+            bindings: { video: "uuid" },
+          },
+          "subcategories.toggleFollow": {
+            uri: "api\/v1\/subcategories\/{subcategory}\/toggle-follow",
+            methods: ["POST"],
+            bindings: { subcategory: "slug" },
+          },
+          "livestream.viewers": {
+            uri: "api\/v1\/current-viewers",
+            methods: ["GET", "HEAD"],
+          },
+          "agreed-terms": { uri: "signup\/agreed-terms", methods: ["POST"] },
+          "set-username": { uri: "signup\/username", methods: ["POST"] },
+          "verification.resend": {
+            uri: "signup\/verification\/resend",
+            methods: ["POST"],
+          },
+          "channel.checkUsername": {
+            uri: "channels\/check-username\/{username}",
+            methods: ["GET", "HEAD"],
+          },
+          "stream.start": { uri: "stream\/start", methods: ["POST"] },
+          "stream.stop": { uri: "stream\/stop", methods: ["POST"] },
+          "stream.update": { uri: "stream\/update", methods: ["POST"] },
+          "stream.get_publish_token": {
+            uri: "stream\/publish_token",
+            methods: ["GET", "HEAD"],
+          },
+          "channel.stripeSubscribe": {
+            uri: "channels\/{channel}\/subscribe",
+            methods: ["POST"],
+            bindings: { channel: "slug" },
+          },
+          "channel.update": { uri: "channels", methods: ["PUT"] },
+          "channel.updateName": {
+            uri: "channels\/{channel}\/updateName",
+            methods: ["PUT"],
+            bindings: { channel: "slug" },
+          },
+          "channel.addUser": { uri: "channels\/add-user", methods: ["POST"] },
+          "channel.removeUser": {
+            uri: "channels\/remove-user",
+            methods: ["POST"],
+          },
+          "emotes.index": { uri: "emotes", methods: ["GET", "HEAD"] },
+          "emotes.store": { uri: "emotes", methods: ["POST"] },
+          "emotes.destroy": {
+            uri: "emotes\/{emote}",
+            methods: ["DELETE"],
+            bindings: { emote: "id" },
+          },
+          "user.setup2fa": { uri: "setup-2fa", methods: ["GET", "HEAD"] },
+          "user.verify2Fa": { uri: "verify-2fa", methods: ["POST"] },
+          "user.remove2Fa": { uri: "remove-2fa", methods: ["PUT"] },
+          "stream.languages": {
+            uri: "stream\/languages",
+            methods: ["GET", "HEAD"],
+          },
+          "stream.get": {
+            uri: "stream\/get\/{live_stream}",
+            methods: ["GET", "HEAD"],
+          },
+          "stream.livestreams": {
+            uri: "stream\/livestreams",
+            methods: ["GET", "HEAD"],
+          },
+          "channel.featured": {
+            uri: "channels\/featured",
+            methods: ["GET", "HEAD"],
+          },
+          "profile.update_profile": {
+            uri: "update_profile",
+            methods: ["POST"],
+          },
+          "profile.update_password": {
+            uri: "update_password",
+            methods: ["POST"],
+          },
+          "profile.update-profile-picture": {
+            uri: "profile\/update-profile-picture",
+            methods: ["POST"],
+          },
+          "profile.update-profile-banner": {
+            uri: "profile\/update-profile-banner",
+            methods: ["POST"],
+          },
+          "socialite.redirect": {
+            uri: "socialite\/{provider}",
+            methods: ["GET", "HEAD"],
+          },
+          "home.sitemap": { uri: "sitemap", methods: ["GET", "HEAD"] },
+          "home.page.legal": { uri: "legal\/{page}", methods: ["GET", "HEAD"] },
+          "webhooks.sns": { uri: "webhooks\/sns", methods: ["POST"] },
+          "verification.verify": {
+            uri: "email\/verify\/{id}\/{hash}",
+            methods: ["GET", "HEAD"],
+          },
+          "nova.impersonate.take": {
+            uri: "nova-impersonate\/users\/{id}\/{guardName?}",
+            methods: ["GET", "HEAD"],
+          },
+          "nova.impersonate.leave": {
+            uri: "nova-impersonate\/leave",
+            methods: ["GET", "HEAD"],
+          },
+          "laravel-nova-excel.download": {
+            uri: "nova-vendor\/maatwebsite\/laravel-nova-excel\/download",
+            methods: ["GET", "HEAD"],
+          },
+          app: {
+            uri: "{fallbackPlaceholder}",
+            methods: ["GET", "HEAD"],
+            wheres: { fallbackPlaceholder: ".*" },
+          },
+        },
+      };
+
+      !(function (t, r) {
+        "object" == typeof exports && "undefined" != typeof module
+          ? (module.exports = r())
+          : "function" == typeof define && define.amd
+          ? define(r)
+          : ((t || self).route = r());
+      })(this, function () {
+        function t(t, r) {
+          for (var n = 0; n < r.length; n++) {
+            var e = r[n];
+            (e.enumerable = e.enumerable || !1),
+              (e.configurable = !0),
+              "value" in e && (e.writable = !0),
+              Object.defineProperty(t, e.key, e);
+          }
+        }
+        function r(r, n, e) {
+          return (
+            n && t(r.prototype, n),
+            e && t(r, e),
+            Object.defineProperty(r, "prototype", { writable: !1 }),
+            r
+          );
+        }
+        function n() {
+          return (
+            (n =
+              Object.assign ||
+              function (t) {
+                for (var r = 1; r < arguments.length; r++) {
+                  var n = arguments[r];
+                  for (var e in n)
+                    Object.prototype.hasOwnProperty.call(n, e) && (t[e] = n[e]);
+                }
+                return t;
+              }),
+            n.apply(this, arguments)
+          );
+        }
+        function e(t) {
+          return (
+            (e = Object.setPrototypeOf
+              ? Object.getPrototypeOf
+              : function (t) {
+                  return t.__proto__ || Object.getPrototypeOf(t);
+                }),
+            e(t)
+          );
+        }
+        function o(t, r) {
+          return (
+            (o =
+              Object.setPrototypeOf ||
+              function (t, r) {
+                return (t.__proto__ = r), t;
+              }),
+            o(t, r)
+          );
+        }
+        function i() {
+          if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
+          if (Reflect.construct.sham) return !1;
+          if ("function" == typeof Proxy) return !0;
+          try {
+            return (
+              Boolean.prototype.valueOf.call(
+                Reflect.construct(Boolean, [], function () {})
+              ),
+              !0
+            );
+          } catch (t) {
+            return !1;
+          }
+        }
+        function u(t, r, n) {
+          return (
+            (u = i()
+              ? Reflect.construct
+              : function (t, r, n) {
+                  var e = [null];
+                  e.push.apply(e, r);
+                  var i = new (Function.bind.apply(t, e))();
+                  return n && o(i, n.prototype), i;
+                }),
+            u.apply(null, arguments)
+          );
+        }
+        function f(t) {
+          var r = "function" == typeof Map ? new Map() : void 0;
+          return (
+            (f = function (t) {
+              if (
+                null === t ||
+                -1 === Function.toString.call(t).indexOf("[native code]")
+              )
+                return t;
+              if ("function" != typeof t)
+                throw new TypeError(
+                  "Super expression must either be null or a function"
+                );
+              if (void 0 !== r) {
+                if (r.has(t)) return r.get(t);
+                r.set(t, n);
+              }
+              function n() {
+                return u(t, arguments, e(this).constructor);
+              }
+              return (
+                (n.prototype = Object.create(t.prototype, {
+                  constructor: {
+                    value: n,
+                    enumerable: !1,
+                    writable: !0,
+                    configurable: !0,
+                  },
+                })),
+                o(n, t)
+              );
+            }),
+            f(t)
+          );
+        }
+        var a = String.prototype.replace,
+          c = /%20/g,
+          l = "RFC3986",
+          s = {
+            default: l,
+            formatters: {
+              RFC1738: function (t) {
+                return a.call(t, c, "+");
+              },
+              RFC3986: function (t) {
+                return String(t);
+              },
+            },
+            RFC1738: "RFC1738",
+            RFC3986: l,
+          },
+          v = Object.prototype.hasOwnProperty,
+          p = Array.isArray,
+          y = (function () {
+            for (var t = [], r = 0; r < 256; ++r)
+              t.push(
+                "%" + ((r < 16 ? "0" : "") + r.toString(16)).toUpperCase()
+              );
+            return t;
+          })(),
+          d = function (t, r) {
+            for (
+              var n = r && r.plainObjects ? Object.create(null) : {}, e = 0;
+              e < t.length;
+              ++e
+            )
+              void 0 !== t[e] && (n[e] = t[e]);
+            return n;
+          },
+          b = {
+            arrayToObject: d,
+            assign: function (t, r) {
+              return Object.keys(r).reduce(function (t, n) {
+                return (t[n] = r[n]), t;
+              }, t);
+            },
+            combine: function (t, r) {
+              return [].concat(t, r);
+            },
+            compact: function (t) {
+              for (
+                var r = [{ obj: { o: t }, prop: "o" }], n = [], e = 0;
+                e < r.length;
+                ++e
+              )
+                for (
+                  var o = r[e], i = o.obj[o.prop], u = Object.keys(i), f = 0;
+                  f < u.length;
+                  ++f
+                ) {
+                  var a = u[f],
+                    c = i[a];
+                  "object" == typeof c &&
+                    null !== c &&
+                    -1 === n.indexOf(c) &&
+                    (r.push({ obj: i, prop: a }), n.push(c));
+                }
+              return (
+                (function (t) {
+                  for (; t.length > 1; ) {
+                    var r = t.pop(),
+                      n = r.obj[r.prop];
+                    if (p(n)) {
+                      for (var e = [], o = 0; o < n.length; ++o)
+                        void 0 !== n[o] && e.push(n[o]);
+                      r.obj[r.prop] = e;
+                    }
+                  }
+                })(r),
+                t
+              );
+            },
+            decode: function (t, r, n) {
+              var e = t.replace(/\+/g, " ");
+              if ("iso-8859-1" === n)
+                return e.replace(/%[0-9a-f]{2}/gi, unescape);
+              try {
+                return decodeURIComponent(e);
+              } catch (t) {
+                return e;
+              }
+            },
+            encode: function (t, r, n, e, o) {
+              if (0 === t.length) return t;
+              var i = t;
+              if (
+                ("symbol" == typeof t
+                  ? (i = Symbol.prototype.toString.call(t))
+                  : "string" != typeof t && (i = String(t)),
+                "iso-8859-1" === n)
+              )
+                return escape(i).replace(/%u[0-9a-f]{4}/gi, function (t) {
+                  return "%26%23" + parseInt(t.slice(2), 16) + "%3B";
+                });
+              for (var u = "", f = 0; f < i.length; ++f) {
+                var a = i.charCodeAt(f);
+                45 === a ||
+                46 === a ||
+                95 === a ||
+                126 === a ||
+                (a >= 48 && a <= 57) ||
+                (a >= 65 && a <= 90) ||
+                (a >= 97 && a <= 122) ||
+                (o === s.RFC1738 && (40 === a || 41 === a))
+                  ? (u += i.charAt(f))
+                  : a < 128
+                  ? (u += y[a])
+                  : a < 2048
+                  ? (u += y[192 | (a >> 6)] + y[128 | (63 & a)])
+                  : a < 55296 || a >= 57344
+                  ? (u +=
+                      y[224 | (a >> 12)] +
+                      y[128 | ((a >> 6) & 63)] +
+                      y[128 | (63 & a)])
+                  : ((a =
+                      65536 +
+                      (((1023 & a) << 10) | (1023 & i.charCodeAt((f += 1))))),
+                    (u +=
+                      y[240 | (a >> 18)] +
+                      y[128 | ((a >> 12) & 63)] +
+                      y[128 | ((a >> 6) & 63)] +
+                      y[128 | (63 & a)]));
+              }
+              return u;
+            },
+            isBuffer: function (t) {
+              return !(
+                !t ||
+                "object" != typeof t ||
+                !(
+                  t.constructor &&
+                  t.constructor.isBuffer &&
+                  t.constructor.isBuffer(t)
+                )
+              );
+            },
+            isRegExp: function (t) {
+              return "[object RegExp]" === Object.prototype.toString.call(t);
+            },
+            maybeMap: function (t, r) {
+              if (p(t)) {
+                for (var n = [], e = 0; e < t.length; e += 1) n.push(r(t[e]));
+                return n;
+              }
+              return r(t);
+            },
+            merge: function t(r, n, e) {
+              if (!n) return r;
+              if ("object" != typeof n) {
+                if (p(r)) r.push(n);
+                else {
+                  if (!r || "object" != typeof r) return [r, n];
+                  ((e && (e.plainObjects || e.allowPrototypes)) ||
+                    !v.call(Object.prototype, n)) &&
+                    (r[n] = !0);
+                }
+                return r;
+              }
+              if (!r || "object" != typeof r) return [r].concat(n);
+              var o = r;
+              return (
+                p(r) && !p(n) && (o = d(r, e)),
+                p(r) && p(n)
+                  ? (n.forEach(function (n, o) {
+                      if (v.call(r, o)) {
+                        var i = r[o];
+                        i && "object" == typeof i && n && "object" == typeof n
+                          ? (r[o] = t(i, n, e))
+                          : r.push(n);
+                      } else r[o] = n;
+                    }),
+                    r)
+                  : Object.keys(n).reduce(function (r, o) {
+                      var i = n[o];
+                      return (r[o] = v.call(r, o) ? t(r[o], i, e) : i), r;
+                    }, o)
+              );
+            },
+          },
+          h = Object.prototype.hasOwnProperty,
+          m = {
+            brackets: function (t) {
+              return t + "[]";
+            },
+            comma: "comma",
+            indices: function (t, r) {
+              return t + "[" + r + "]";
+            },
+            repeat: function (t) {
+              return t;
+            },
+          },
+          g = Array.isArray,
+          j = String.prototype.split,
+          w = Array.prototype.push,
+          O = function (t, r) {
+            w.apply(t, g(r) ? r : [r]);
+          },
+          E = Date.prototype.toISOString,
+          R = s.default,
+          S = {
+            addQueryPrefix: !1,
+            allowDots: !1,
+            charset: "utf-8",
+            charsetSentinel: !1,
+            delimiter: "&",
+            encode: !0,
+            encoder: b.encode,
+            encodeValuesOnly: !1,
+            format: R,
+            formatter: s.formatters[R],
+            indices: !1,
+            serializeDate: function (t) {
+              return E.call(t);
+            },
+            skipNulls: !1,
+            strictNullHandling: !1,
+          },
+          T = function t(r, n, e, o, i, u, f, a, c, l, s, v, p, y) {
+            var d,
+              h = r;
+            if (
+              ("function" == typeof f
+                ? (h = f(n, h))
+                : h instanceof Date
+                ? (h = l(h))
+                : "comma" === e &&
+                  g(h) &&
+                  (h = b.maybeMap(h, function (t) {
+                    return t instanceof Date ? l(t) : t;
+                  })),
+              null === h)
+            ) {
+              if (o) return u && !p ? u(n, S.encoder, y, "key", s) : n;
+              h = "";
+            }
+            if (
+              "string" == typeof (d = h) ||
+              "number" == typeof d ||
+              "boolean" == typeof d ||
+              "symbol" == typeof d ||
+              "bigint" == typeof d ||
+              b.isBuffer(h)
+            ) {
+              if (u) {
+                var m = p ? n : u(n, S.encoder, y, "key", s);
+                if ("comma" === e && p) {
+                  for (
+                    var w = j.call(String(h), ","), E = "", R = 0;
+                    R < w.length;
+                    ++R
+                  )
+                    E +=
+                      (0 === R ? "" : ",") +
+                      v(u(w[R], S.encoder, y, "value", s));
+                  return [v(m) + "=" + E];
+                }
+                return [v(m) + "=" + v(u(h, S.encoder, y, "value", s))];
+              }
+              return [v(n) + "=" + v(String(h))];
+            }
+            var T,
+              k = [];
+            if (void 0 === h) return k;
+            if ("comma" === e && g(h))
+              T = [{ value: h.length > 0 ? h.join(",") || null : void 0 }];
+            else if (g(f)) T = f;
+            else {
+              var x = Object.keys(h);
+              T = a ? x.sort(a) : x;
+            }
+            for (var N = 0; N < T.length; ++N) {
+              var C = T[N],
+                D = "object" == typeof C && void 0 !== C.value ? C.value : h[C];
+              if (!i || null !== D) {
+                var F = g(h)
+                  ? "function" == typeof e
+                    ? e(n, C)
+                    : n
+                  : n + (c ? "." + C : "[" + C + "]");
+                O(k, t(D, F, e, o, i, u, f, a, c, l, s, v, p, y));
+              }
+            }
+            return k;
+          },
+          k = Object.prototype.hasOwnProperty,
+          x = Array.isArray,
+          N = {
+            allowDots: !1,
+            allowPrototypes: !1,
+            arrayLimit: 20,
+            charset: "utf-8",
+            charsetSentinel: !1,
+            comma: !1,
+            decoder: b.decode,
+            delimiter: "&",
+            depth: 5,
+            ignoreQueryPrefix: !1,
+            interpretNumericEntities: !1,
+            parameterLimit: 1e3,
+            parseArrays: !0,
+            plainObjects: !1,
+            strictNullHandling: !1,
+          },
+          C = function (t) {
+            return t.replace(/&#(\d+);/g, function (t, r) {
+              return String.fromCharCode(parseInt(r, 10));
+            });
+          },
+          D = function (t, r) {
+            return t && "string" == typeof t && r.comma && t.indexOf(",") > -1
+              ? t.split(",")
+              : t;
+          },
+          F = function (t, r, n, e) {
+            if (t) {
+              var o = n.allowDots ? t.replace(/\.([^.[]+)/g, "[$1]") : t,
+                i = /(\[[^[\]]*])/g,
+                u = n.depth > 0 && /(\[[^[\]]*])/.exec(o),
+                f = u ? o.slice(0, u.index) : o,
+                a = [];
+              if (f) {
+                if (
+                  !n.plainObjects &&
+                  k.call(Object.prototype, f) &&
+                  !n.allowPrototypes
+                )
+                  return;
+                a.push(f);
+              }
+              for (
+                var c = 0;
+                n.depth > 0 && null !== (u = i.exec(o)) && c < n.depth;
+
+              ) {
+                if (
+                  ((c += 1),
+                  !n.plainObjects &&
+                    k.call(Object.prototype, u[1].slice(1, -1)) &&
+                    !n.allowPrototypes)
+                )
+                  return;
+                a.push(u[1]);
+              }
+              return (
+                u && a.push("[" + o.slice(u.index) + "]"),
+                (function (t, r, n, e) {
+                  for (var o = e ? r : D(r, n), i = t.length - 1; i >= 0; --i) {
+                    var u,
+                      f = t[i];
+                    if ("[]" === f && n.parseArrays) u = [].concat(o);
+                    else {
+                      u = n.plainObjects ? Object.create(null) : {};
+                      var a =
+                          "[" === f.charAt(0) && "]" === f.charAt(f.length - 1)
+                            ? f.slice(1, -1)
+                            : f,
+                        c = parseInt(a, 10);
+                      n.parseArrays || "" !== a
+                        ? !isNaN(c) &&
+                          f !== a &&
+                          String(c) === a &&
+                          c >= 0 &&
+                          n.parseArrays &&
+                          c <= n.arrayLimit
+                          ? ((u = [])[c] = o)
+                          : "__proto__" !== a && (u[a] = o)
+                        : (u = { 0: o });
+                    }
+                    o = u;
+                  }
+                  return o;
+                })(a, r, n, e)
+              );
+            }
+          },
+          $ = function (t, r) {
+            var n = (function (t) {
+              if (!t) return N;
+              if (null != t.decoder && "function" != typeof t.decoder)
+                throw new TypeError("Decoder has to be a function.");
+              if (
+                void 0 !== t.charset &&
+                "utf-8" !== t.charset &&
+                "iso-8859-1" !== t.charset
+              )
+                throw new TypeError(
+                  "The charset option must be either utf-8, iso-8859-1, or undefined"
+                );
+              return {
+                allowDots: void 0 === t.allowDots ? N.allowDots : !!t.allowDots,
+                allowPrototypes:
+                  "boolean" == typeof t.allowPrototypes
+                    ? t.allowPrototypes
+                    : N.allowPrototypes,
+                arrayLimit:
+                  "number" == typeof t.arrayLimit ? t.arrayLimit : N.arrayLimit,
+                charset: void 0 === t.charset ? N.charset : t.charset,
+                charsetSentinel:
+                  "boolean" == typeof t.charsetSentinel
+                    ? t.charsetSentinel
+                    : N.charsetSentinel,
+                comma: "boolean" == typeof t.comma ? t.comma : N.comma,
+                decoder: "function" == typeof t.decoder ? t.decoder : N.decoder,
+                delimiter:
+                  "string" == typeof t.delimiter || b.isRegExp(t.delimiter)
+                    ? t.delimiter
+                    : N.delimiter,
+                depth:
+                  "number" == typeof t.depth || !1 === t.depth
+                    ? +t.depth
+                    : N.depth,
+                ignoreQueryPrefix: !0 === t.ignoreQueryPrefix,
+                interpretNumericEntities:
+                  "boolean" == typeof t.interpretNumericEntities
+                    ? t.interpretNumericEntities
+                    : N.interpretNumericEntities,
+                parameterLimit:
+                  "number" == typeof t.parameterLimit
+                    ? t.parameterLimit
+                    : N.parameterLimit,
+                parseArrays: !1 !== t.parseArrays,
+                plainObjects:
+                  "boolean" == typeof t.plainObjects
+                    ? t.plainObjects
+                    : N.plainObjects,
+                strictNullHandling:
+                  "boolean" == typeof t.strictNullHandling
+                    ? t.strictNullHandling
+                    : N.strictNullHandling,
+              };
+            })(r);
+            if ("" === t || null == t)
+              return n.plainObjects ? Object.create(null) : {};
+            for (
+              var e =
+                  "string" == typeof t
+                    ? (function (t, r) {
+                        var n,
+                          e = {},
+                          o = (
+                            r.ignoreQueryPrefix ? t.replace(/^\?/, "") : t
+                          ).split(
+                            r.delimiter,
+                            Infinity === r.parameterLimit
+                              ? void 0
+                              : r.parameterLimit
+                          ),
+                          i = -1,
+                          u = r.charset;
+                        if (r.charsetSentinel)
+                          for (n = 0; n < o.length; ++n)
+                            0 === o[n].indexOf("utf8=") &&
+                              ("utf8=%E2%9C%93" === o[n]
+                                ? (u = "utf-8")
+                                : "utf8=%26%2310003%3B" === o[n] &&
+                                  (u = "iso-8859-1"),
+                              (i = n),
+                              (n = o.length));
+                        for (n = 0; n < o.length; ++n)
+                          if (n !== i) {
+                            var f,
+                              a,
+                              c = o[n],
+                              l = c.indexOf("]="),
+                              s = -1 === l ? c.indexOf("=") : l + 1;
+                            -1 === s
+                              ? ((f = r.decoder(c, N.decoder, u, "key")),
+                                (a = r.strictNullHandling ? null : ""))
+                              : ((f = r.decoder(
+                                  c.slice(0, s),
+                                  N.decoder,
+                                  u,
+                                  "key"
+                                )),
+                                (a = b.maybeMap(
+                                  D(c.slice(s + 1), r),
+                                  function (t) {
+                                    return r.decoder(t, N.decoder, u, "value");
+                                  }
+                                ))),
+                              a &&
+                                r.interpretNumericEntities &&
+                                "iso-8859-1" === u &&
+                                (a = C(a)),
+                              c.indexOf("[]=") > -1 && (a = x(a) ? [a] : a),
+                              (e[f] = k.call(e, f) ? b.combine(e[f], a) : a);
+                          }
+                        return e;
+                      })(t, n)
+                    : t,
+                o = n.plainObjects ? Object.create(null) : {},
+                i = Object.keys(e),
+                u = 0;
+              u < i.length;
+              ++u
+            ) {
+              var f = i[u],
+                a = F(f, e[f], n, "string" == typeof t);
+              o = b.merge(o, a, n);
+            }
+            return b.compact(o);
+          },
+          A = /*#__PURE__*/ (function () {
+            function t(t, r, n) {
+              var e, o;
+              (this.name = t),
+                (this.definition = r),
+                (this.bindings = null != (e = r.bindings) ? e : {}),
+                (this.wheres = null != (o = r.wheres) ? o : {}),
+                (this.config = n);
+            }
+            var n = t.prototype;
+            return (
+              (n.matchesUrl = function (t) {
+                var r = this;
+                if (!this.definition.methods.includes("GET")) return !1;
+                var n = this.template
+                    .replace(/(\/?){([^}?]*)(\??)}/g, function (t, n, e, o) {
+                      var i,
+                        u =
+                          "(?<" +
+                          e +
+                          ">" +
+                          ((null == (i = r.wheres[e])
+                            ? void 0
+                            : i.replace(/(^\^)|(\$$)/g, "")) || "[^/?]+") +
+                          ")";
+                      return o ? "(" + n + u + ")?" : "" + n + u;
+                    })
+                    .replace(/^\w+:\/\//, ""),
+                  e = t.replace(/^\w+:\/\//, "").split("?"),
+                  o = e[0],
+                  i = e[1],
+                  u = new RegExp("^" + n + "/?$").exec(o);
+                return !!u && { params: u.groups, query: $(i) };
+              }),
+              (n.compile = function (t) {
+                var r = this,
+                  n = this.parameterSegments;
+                return n.length
+                  ? this.template
+                      .replace(/{([^}?]+)(\??)}/g, function (e, o, i) {
+                        var u, f, a;
+                        if (!i && [null, void 0].includes(t[o]))
+                          throw new Error(
+                            "Ziggy error: '" +
+                              o +
+                              "' parameter is required for route '" +
+                              r.name +
+                              "'."
+                          );
+                        if (n[n.length - 1].name === o && ".*" === r.wheres[o])
+                          return encodeURIComponent(
+                            null != (a = t[o]) ? a : ""
+                          ).replace(/%2F/g, "/");
+                        if (
+                          r.wheres[o] &&
+                          !new RegExp(
+                            "^" +
+                              (i ? "(" + r.wheres[o] + ")?" : r.wheres[o]) +
+                              "$"
+                          ).test(null != (u = t[o]) ? u : "")
+                        )
+                          throw new Error(
+                            "Ziggy error: '" +
+                              o +
+                              "' parameter does not match required format '" +
+                              r.wheres[o] +
+                              "' for route '" +
+                              r.name +
+                              "'."
+                          );
+                        return encodeURIComponent(null != (f = t[o]) ? f : "");
+                      })
+                      .replace(/\/+$/, "")
+                  : this.template;
+              }),
+              r(t, [
+                {
+                  key: "template",
+                  get: function () {
+                    return (
+                      (this.config.absolute
+                        ? this.definition.domain
+                          ? "" +
+                            this.config.url.match(/^\w+:\/\//)[0] +
+                            this.definition.domain +
+                            (this.config.port ? ":" + this.config.port : "")
+                          : this.config.url
+                        : "") +
+                      "/" +
+                      this.definition.uri
+                    ).replace(/\/+$/, "");
+                  },
+                },
+                {
+                  key: "parameterSegments",
+                  get: function () {
+                    var t, r;
+                    return null !=
+                      (t =
+                        null == (r = this.template.match(/{[^}?]+\??}/g))
+                          ? void 0
+                          : r.map(function (t) {
+                              return {
+                                name: t.replace(/{|\??}/g, ""),
+                                required: !/\?}$/.test(t),
+                              };
+                            }))
+                      ? t
+                      : [];
+                  },
+                },
+              ]),
+              t
+            );
+          })(),
+          P = /*#__PURE__*/ (function (t) {
+            var e, i;
+            function u(r, e, o, i) {
+              var u;
+              if (
+                (void 0 === o && (o = !0),
+                ((u = t.call(this) || this).t =
+                  null != i
+                    ? i
+                    : "undefined" != typeof Ziggy
+                    ? Ziggy
+                    : null == globalThis
+                    ? void 0
+                    : globalThis.Ziggy),
+                (u.t = n({}, u.t, { absolute: o })),
+                r)
+              ) {
+                if (!u.t.routes[r])
+                  throw new Error(
+                    "Ziggy error: route '" + r + "' is not in the route list."
+                  );
+                (u.i = new A(r, u.t.routes[r], u.t)), (u.u = u.l(e));
+              }
+              return u;
+            }
+            (i = t),
+              ((e = u).prototype = Object.create(i.prototype)),
+              (e.prototype.constructor = e),
+              o(e, i);
+            var f = u.prototype;
+            return (
+              (f.toString = function () {
+                var t = this,
+                  r = Object.keys(this.u)
+                    .filter(function (r) {
+                      return !t.i.parameterSegments.some(function (t) {
+                        return t.name === r;
+                      });
+                    })
+                    .filter(function (t) {
+                      return "_query" !== t;
+                    })
+                    .reduce(function (r, e) {
+                      var o;
+                      return n({}, r, (((o = {})[e] = t.u[e]), o));
+                    }, {});
+                return (
+                  this.i.compile(this.u) +
+                  (function (t, r) {
+                    var n,
+                      e = t,
+                      o = (function (t) {
+                        if (!t) return S;
+                        if (null != t.encoder && "function" != typeof t.encoder)
+                          throw new TypeError("Encoder has to be a function.");
+                        var r = t.charset || S.charset;
+                        if (
+                          void 0 !== t.charset &&
+                          "utf-8" !== t.charset &&
+                          "iso-8859-1" !== t.charset
+                        )
+                          throw new TypeError(
+                            "The charset option must be either utf-8, iso-8859-1, or undefined"
+                          );
+                        var n = s.default;
+                        if (void 0 !== t.format) {
+                          if (!h.call(s.formatters, t.format))
+                            throw new TypeError(
+                              "Unknown format option provided."
+                            );
+                          n = t.format;
+                        }
+                        var e = s.formatters[n],
+                          o = S.filter;
+                        return (
+                          ("function" == typeof t.filter || g(t.filter)) &&
+                            (o = t.filter),
+                          {
+                            addQueryPrefix:
+                              "boolean" == typeof t.addQueryPrefix
+                                ? t.addQueryPrefix
+                                : S.addQueryPrefix,
+                            allowDots:
+                              void 0 === t.allowDots
+                                ? S.allowDots
+                                : !!t.allowDots,
+                            charset: r,
+                            charsetSentinel:
+                              "boolean" == typeof t.charsetSentinel
+                                ? t.charsetSentinel
+                                : S.charsetSentinel,
+                            delimiter:
+                              void 0 === t.delimiter
+                                ? S.delimiter
+                                : t.delimiter,
+                            encode:
+                              "boolean" == typeof t.encode
+                                ? t.encode
+                                : S.encode,
+                            encoder:
+                              "function" == typeof t.encoder
+                                ? t.encoder
+                                : S.encoder,
+                            encodeValuesOnly:
+                              "boolean" == typeof t.encodeValuesOnly
+                                ? t.encodeValuesOnly
+                                : S.encodeValuesOnly,
+                            filter: o,
+                            format: n,
+                            formatter: e,
+                            serializeDate:
+                              "function" == typeof t.serializeDate
+                                ? t.serializeDate
+                                : S.serializeDate,
+                            skipNulls:
+                              "boolean" == typeof t.skipNulls
+                                ? t.skipNulls
+                                : S.skipNulls,
+                            sort: "function" == typeof t.sort ? t.sort : null,
+                            strictNullHandling:
+                              "boolean" == typeof t.strictNullHandling
+                                ? t.strictNullHandling
+                                : S.strictNullHandling,
+                          }
+                        );
+                      })(r);
+                    "function" == typeof o.filter
+                      ? (e = (0, o.filter)("", e))
+                      : g(o.filter) && (n = o.filter);
+                    var i = [];
+                    if ("object" != typeof e || null === e) return "";
+                    var u =
+                      m[
+                        r && r.arrayFormat in m
+                          ? r.arrayFormat
+                          : r && "indices" in r
+                          ? r.indices
+                            ? "indices"
+                            : "repeat"
+                          : "indices"
+                      ];
+                    n || (n = Object.keys(e)), o.sort && n.sort(o.sort);
+                    for (var f = 0; f < n.length; ++f) {
+                      var a = n[f];
+                      (o.skipNulls && null === e[a]) ||
+                        O(
+                          i,
+                          T(
+                            e[a],
+                            a,
+                            u,
+                            o.strictNullHandling,
+                            o.skipNulls,
+                            o.encode ? o.encoder : null,
+                            o.filter,
+                            o.sort,
+                            o.allowDots,
+                            o.serializeDate,
+                            o.format,
+                            o.formatter,
+                            o.encodeValuesOnly,
+                            o.charset
+                          )
+                        );
+                    }
+                    var c = i.join(o.delimiter),
+                      l = !0 === o.addQueryPrefix ? "?" : "";
+                    return (
+                      o.charsetSentinel &&
+                        (l +=
+                          "iso-8859-1" === o.charset
+                            ? "utf8=%26%2310003%3B&"
+                            : "utf8=%E2%9C%93&"),
+                      c.length > 0 ? l + c : ""
+                    );
+                  })(n({}, r, this.u._query), {
+                    addQueryPrefix: !0,
+                    arrayFormat: "indices",
+                    encodeValuesOnly: !0,
+                    skipNulls: !0,
+                    encoder: function (t, r) {
+                      return "boolean" == typeof t ? Number(t) : r(t);
+                    },
+                  })
+                );
+              }),
+              (f.v = function (t) {
+                var r = this;
+                t
+                  ? this.t.absolute &&
+                    t.startsWith("/") &&
+                    (t = this.p().host + t)
+                  : (t = this.h());
+                var e = {},
+                  o = Object.entries(this.t.routes).find(function (n) {
+                    return (e = new A(n[0], n[1], r.t).matchesUrl(t));
+                  }) || [void 0, void 0];
+                return n({ name: o[0] }, e, { route: o[1] });
+              }),
+              (f.h = function () {
+                var t = this.p(),
+                  r = t.pathname,
+                  n = t.search;
+                return (
+                  (this.t.absolute
+                    ? t.host + r
+                    : r
+                        .replace(this.t.url.replace(/^\w*:\/\/[^/]+/, ""), "")
+                        .replace(/^\/+/, "/")) + n
+                );
+              }),
+              (f.current = function (t, r) {
+                var e = this.v(),
+                  o = e.name,
+                  i = e.params,
+                  u = e.query,
+                  f = e.route;
+                if (!t) return o;
+                var a = new RegExp(
+                  "^" + t.replace(/\./g, "\\.").replace(/\*/g, ".*") + "$"
+                ).test(o);
+                if ([null, void 0].includes(r) || !a) return a;
+                var c = new A(o, f, this.t);
+                r = this.l(r, c);
+                var l = n({}, i, u);
+                return (
+                  !(
+                    !Object.values(r).every(function (t) {
+                      return !t;
+                    }) ||
+                    Object.values(l).some(function (t) {
+                      return void 0 !== t;
+                    })
+                  ) ||
+                  Object.entries(r).every(function (t) {
+                    return l[t[0]] == t[1];
+                  })
+                );
+              }),
+              (f.p = function () {
+                var t,
+                  r,
+                  n,
+                  e,
+                  o,
+                  i,
+                  u = "undefined" != typeof window ? window.location : {},
+                  f = u.host,
+                  a = u.pathname,
+                  c = u.search;
+                return {
+                  host:
+                    null !=
+                    (t = null == (r = this.t.location) ? void 0 : r.host)
+                      ? t
+                      : void 0 === f
+                      ? ""
+                      : f,
+                  pathname:
+                    null !=
+                    (n = null == (e = this.t.location) ? void 0 : e.pathname)
+                      ? n
+                      : void 0 === a
+                      ? ""
+                      : a,
+                  search:
+                    null !=
+                    (o = null == (i = this.t.location) ? void 0 : i.search)
+                      ? o
+                      : void 0 === c
+                      ? ""
+                      : c,
+                };
+              }),
+              (f.has = function (t) {
+                return Object.keys(this.t.routes).includes(t);
+              }),
+              (f.l = function (t, r) {
+                var e = this;
+                void 0 === t && (t = {}),
+                  void 0 === r && (r = this.i),
+                  (t = ["string", "number"].includes(typeof t) ? [t] : t);
+                var o = r.parameterSegments.filter(function (t) {
+                  return !e.t.defaults[t.name];
+                });
+                if (Array.isArray(t))
+                  t = t.reduce(function (t, r, e) {
+                    var i, u;
+                    return n(
+                      {},
+                      t,
+                      o[e]
+                        ? (((i = {})[o[e].name] = r), i)
+                        : "object" == typeof r
+                        ? r
+                        : (((u = {})[r] = ""), u)
+                    );
+                  }, {});
+                else if (
+                  1 === o.length &&
+                  !t[o[0].name] &&
+                  (t.hasOwnProperty(Object.values(r.bindings)[0]) ||
+                    t.hasOwnProperty("id"))
+                ) {
+                  var i;
+                  ((i = {})[o[0].name] = t), (t = i);
+                }
+                return n({}, this.m(r), this.g(t, r));
+              }),
+              (f.m = function (t) {
+                var r = this;
+                return t.parameterSegments
+                  .filter(function (t) {
+                    return r.t.defaults[t.name];
+                  })
+                  .reduce(function (t, e, o) {
+                    var i,
+                      u = e.name;
+                    return n({}, t, (((i = {})[u] = r.t.defaults[u]), i));
+                  }, {});
+              }),
+              (f.g = function (t, r) {
+                var e = r.bindings,
+                  o = r.parameterSegments;
+                return Object.entries(t).reduce(function (t, r) {
+                  var i,
+                    u,
+                    f = r[0],
+                    a = r[1];
+                  if (
+                    !a ||
+                    "object" != typeof a ||
+                    Array.isArray(a) ||
+                    !o.some(function (t) {
+                      return t.name === f;
+                    })
+                  )
+                    return n({}, t, (((u = {})[f] = a), u));
+                  if (!a.hasOwnProperty(e[f])) {
+                    if (!a.hasOwnProperty("id"))
+                      throw new Error(
+                        "Ziggy error: object passed as '" +
+                          f +
+                          "' parameter is missing route model binding key '" +
+                          e[f] +
+                          "'."
+                      );
+                    e[f] = "id";
+                  }
+                  return n({}, t, (((i = {})[f] = a[e[f]]), i));
+                }, {});
+              }),
+              (f.valueOf = function () {
+                return this.toString();
+              }),
+              (f.check = function (t) {
+                return this.has(t);
+              }),
+              r(u, [
+                {
+                  key: "params",
+                  get: function () {
+                    var t = this.v();
+                    return n({}, t.params, t.query);
+                  },
+                },
+              ]),
+              u
+            );
+          })(/*#__PURE__*/ f(String));
+        return function (t, r, n, e) {
+          var o = new P(t, r, n, e);
+          return t ? o.toString() : o;
+        };
+      });
+    </script>
+    <script
+      type="module"
+      src="./Downbadplanet_files/app.ad92f7d6.js.download"
+    ></script>
+    <link rel="stylesheet" href="./Downbadplanet_files/app.fb13ad74.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Home.502491d4.js"
+    />
+    <link rel="stylesheet" href="./Downbadplanet_files/Home.10e19bb1.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Grid.a9ec4eba.js"
+    />
+    <link rel="stylesheet" href="./Downbadplanet_files/Grid.3aca4ce2.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/More.049fce0d.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Channel.64d633a6.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/index.4e10d7e7.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Squares.e20a6967.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Footer.acd9d2cb.js"
+    />
+    <link rel="stylesheet" href="./Downbadplanet_files/Footer.2ad52540.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Discord.04668e3c.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Sidebar.f1e112da.js"
+    />
+    <link rel="stylesheet" href="./Downbadplanet_files/Sidebar.f1951b56.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Subcategory.b6c78e17.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/Livestreams.vue_vue_type_style_index_0_lang.284c1fc6.js"
+    />
+    <link
+      rel="stylesheet"
+      href="./Downbadplanet_files/Livestreams.a18cf635.css"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://dbxmjjzl5pc1g.cloudfront.net/b4e013c0-4c83-4219-92fd-15890b37fa62/build/assets/IntersectionObserver.vue_vue_type_script_setup_props_lang.1043ccc0.js"
+    />
+    <style type="text/css">
+      :root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"], :root div[id^="yandex_ad"], :root div[id^="vuukle-ad-"], :root div[id^="rc-widget-"], :root div[id^="lazyad-"], :root div[id^="js-dfp-"], :root div[id^="gtm-ad-"], :root div[id^="gpt_ad_"], :root div[id^="gpt-ad-hor"], :root div[id^="div-gpt-"], :root div[id^="dfp-slot-"], :root div[id^="dfp-ad-"], :root div[id^="advads_"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="adngin-"], :root div[id^="adfox_"], :root div[id^="ad_script_"], :root div[id^="ad-server-"], :root div[id^="ad-gpt-"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-mpu1], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-targeting], :root div[data-ad-placeholder], :root div[class^="s-dfp-"], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root aside[id^="advads_ad_widget-"], :root aside[id^="adrotate_widgets-"], :root article.ad, :root div[class^="gpt-ad-hor"], :root ark-top-ad, :root app-advertisement, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root ad-shield-ads, :root ad-desktop-sidebar, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://www.vfreecams.com/in/?track="], :root a[href^="https://www.rabbits.webcam/?id="], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.passeura.com/"], :root a[href^="https://www.oneclickroot.com/?tap_a="] > img, :root a[href^="https://www.oboom.com/ref/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.jackery.com?aff="] > img, :root a[href^="https://www.iyalc.com/"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancegate.com/"], :root a[href^="https://www.healthrangerstore.com/"] > img, :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.clicktraceclick.com/"], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root a[href^="https://www.adsexse.com/x/"], :root a[href^="https://webroutetrk.com/"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href^="https://wantopticalfreelance.com/"], :root a[href^="https://waisheph.com/"], :root a[href^="https://uncensored.game/"], :root a[href^="https://twinrdsyn.com/"], :root a[href^="https://ttf.trmobc.com/"], :root a[href^="https://trusted-click-host.com/"], :root a[href^="https://trk.watchlivesports4k.club/"], :root a[href^="https://trk.moviesflix4k.xyz/"], :root a[href^="https://trf.bannerator.com/"], :root a[href^="https://trappist-1d.com/"], :root a[href^="https://tragency-clesburg.icu/"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://tracking.trackcasino.co/"], :root a[href^="https://tracking.comfortclick.eu/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://track.themadtrcker.com/"], :root a[href^="https://track.interactivegf.com/"], :root a[href^="https://vlnk.me/"], :root a[href^="https://track.healthtrader.com/"], :root a[href^="https://track.effiliation.com/servlet/effi.click?"] > img, :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://tupitea.co/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://tm-offers.gamingadult.com/"], :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root a[href^="https://tracking.gitads.io/"], :root a[href^="https://taghaugh.com/"], :root a[href^="https://t.mobtya.com/"], :root a[href^="https://t.hrtyj.com/"], :root a[href^="https://www.profitablecpmgate.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://s.zlink2.com/"], :root a[href^="https://reachtrgt.com/"], :root a[href^="https://queersodadults.com/"], :root a[href^="https://promo-bc.com/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href^="https://pongidsrunback.com/"], :root a[href^="https://pcm.bannerator.com/"], :root iframe[id^="google_ads_frame"], :root a[href^="https://pb-track.com/"], :root a[href^="https://partners.fxoro.com/click.php?"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://torrentsafeguard.com/?aid="], :root a[href^="https://offers.refchamp.com/"], :root a[href^="https://oackoubs.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://nutrientassumptionclaims.com/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://t.grtyi.com/"], :root a[href^="https://myusenet.xyz/"], :root a[href^="https://msecure117.com/"], :root a[href^="https://moneynow.one/"], :root div[id^="ezoic-pub-ad-"], :root a[href^="https://mk-cdn.net/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root a[href^="https://meet-to-fuck.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://look.utndln.com/"], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpazkjixes.top/"], :root a[href^="https://landing.brazzersplus.com/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://movie.download-file.org/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root a[href^="https://go.xxxiijmp.com"], :root a[href*=".zlinkm.com/"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://thaudray.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="//lambingsyddir.com/"], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.ebrokerserve.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://track.afftck.com/"], :root a[href^="https://gohere.pl/"], :root a[href^="https://go.cmrdr.com/"], :root a[href^="https://www.bebi.com"], :root a[href^="https://loboclick.com"], :root iframe[src^="https://pagead2.googlesyndication.com/"], :root a[href^="http://www.onwebcam.com/random?t_link="], :root a[href^="https://get2nesoft1.ru/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://aj1070.online/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root bottomadblock, :root a[href^="https://fertilitycommand.com/"], :root a[href^="https://bluedelivery.pro/"], :root a[href^="https://fast-redirecting.com/"], :root a[href^="https://fakelay.com/"], :root a[href^="https://medleyads.com/"], :root div[data-native-ad], :root AD-SLOT, :root a[href^="https://engine.trackingdesks.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://dianches-inchor.com/"], :root a[href^="https://go.admjmp.com/"], :root amp-fx-flying-carpet, :root a[href^="https://dfsdkkka.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="https://deliver.tf2www.com/"], :root [href^="https://www.targetingpartner.com/"], :root [href^="https://detachedbates.com/"], :root a[href^="https://deliver.ptgncdn.com/"], :root a[href^="https://datingbests.life/"], :root #kt_player > a[target="_blank"], :root a[href^="https://cpartner.bdswiss.com/"], :root a[href^="https://clixtrac.com/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://aaucwbe.com/"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://mob1ledev1ces.com/"], :root a[href^="https://explore.findanswersnow.net/"], :root a[href^="https://camfapr.com/landing/click/"], :root a[href^="https://my-movie.club/"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="https://affcpatrk.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root #topstuff > #tads, :root a[href^="https://black77854.com/"], :root a[href^="https://burpee.xyz/"], :root a[href*=".flndmyiove.net/"], :root [href^="http://join.trannies-fuck.com/"], :root [href^="http://www.fleshlightgirls.com/"], :root a[href^="https://bestdatinghere.life/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="https://m.do.co/c/"] > img, :root div[id^="sticky_ad_"], :root a[href^="https://avtub.click/assets/link.php"], :root a[href^="https://go.gldrdr.com/"], :root [id^="ad_sky"], :root a[href^="https://funkydaters.com/"], :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://as.sexad.net/"], :root a[href^="https://bestcond1tions.com/"], :root a[href^="https://takeallsoft.ru/"], :root a[href^="https://as.conjectwatson.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root [data-ez-name], :root a[href^="https://awecrptjmp.com/"], :root a[href^="https://someperceptionparade.com/"], :root a[href^="https://galaxyroms.net/?scr="], :root a[href^="https://albionsoftwares.com/"], :root display-ad-component, :root a[href^="https://ak.hetaruwg.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.alxbgo.com/"], :root a[href^="https://aff-ads.stickywilds.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://ads.cdn.live/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="http://secure.vivid.com/track/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root a[href^="https://misspkl.com/"], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root a[href^="https://adswick.com/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://ad.atdmt.com/"], :root a[href^="https://meet-sex-here.com/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://k2s.cc/pr/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.coiwqe.site/"], :root iframe[src^="http://www.adpeepshosted.com/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://ads-for-free.com/click.php?"], :root a[href^="http://www.FriendlyDuck.com/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root .trc_rbox .syndicatedItem, :root a[href^="https://1free33style.com/"], :root a[href^="http://rs-stripe.wsj.com/stripe/redirect"], :root a[href^="http://tour.mrskin.com/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root [onclick*="content.ad/"], :root a[href^="http://pityhostngco2.xyz/"], :root a[href^="http://partners.etoro.com/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci, :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="http://intent.bingads.com/"], :root a[href^="https://cagothie.net/"], :root a[href^="https://watchmygirlfriend.tv/"], :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="http://go.fpmarkets.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="http://go.247traffic.com/"], :root a[href^="http://www.advcashpro.com/aff/"], :root a[href^="http://deloplen.com/"], :root a[href^="http://d2.zedo.com/"], :root .rc-cta[data-target], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://adtrack1.club/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://bs.serving-sys.com"], :root [class^="chp_ads_block"], :root a[href^="http://betahit.click/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="//wagerprocuratorantiterrorist.com/"], :root a[href^="http://adserver.adreactor.com/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://earandmarketing.com/"], :root a[href^="http://adf.ly/?id="], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root a[href^="//syndication.dynsrvtbg.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="http://m.hsrve.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="//benoopto.com/"], :root [id^="ad-wrap-"], :root [href^="https://www.restoro.com/"], :root a[href^="//apptjmp.com/"], :root a[href^="https://dooloust.net/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root a[href="//rufflycouncil.com/"], :root a[href*="https://www.sweetdeals.com/"] img, :root div[data-native_ad], :root a[href*=".zlink9.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://dishphysics.com/"], :root a[href^="//go.xlviiirdr.com"], :root [data-dynamic-ads], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-ad-width], :root [href^="https://join.playboyplus.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="https://axdsz.pro/"], :root a[href^="http://bodelen.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://ptapjmp.com/"], :root DFP-AD, :root a[href^="http://allaptair.club/"], :root a[href^="//go.eabids.com/"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[href*="http://MyPillow.com"] > img, :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [href^="https://infinitytrk.com/"], :root [onclick^="location.href='http://www.reimageplus.com"], :root a[href^="https://pl.premium4kflix.website/"], :root [id^="chp_ads_block"], :root a[href^="https://go.julrdr.com/"], :root a[href^="//chrif8kdstie.com/"], :root [id^="section-ad-banner"], :root .commercial-unit-mobile-top > div[data-pla="1"], :root a[href^="https://www.sweetdeals.com"], :root a[href^="https://track.bruceads.com/"], :root a[href^="https://t.aslnk.link/"], :root [href^="https://zstacklife.com/"] img, :root [data-ad-manager-id], :root a[href^="https://fleshlight.sjv.io/"], :root div[id^="zergnet-widget"], :root [href^="https://www.mystore.com/"] > img, :root div[id^="ad-position-"], :root a[href^="http://adultfriendfinder.com/go/page/landing"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root a[href^="http://bc.vc/?r="], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://syndication.exoclick.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://go.trackitalltheway.com/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://www.awin1.com/cread.php?awinaffid="], :root a[href^="//thaudray.com/"], :root a[href*=".trust.zone"], :root a[href^="http://trk.mdrtrck.com/"], :root [href^="https://shrugartisticelder.com"], :root div[id^="crt-"][style], :root a[href^="https://s.zlink1.com/"], :root a[href^="http://adultgames.xxx/"], :root a[href^="https://traffic.bannerator.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root div[id^="ad-inserter-"], :root .scroll-fixable.rail-right > .deals-rail, :root a[href^="https://see.kmisln.com/"], :root [href^="https://routewebtk.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://mmwebhandler.aff-online.com/"], :root [href^="https://r.kraken.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root .commercial-unit-mobile-top > .v7hl4d, :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [href^="https://stvkr.com/"], :root a[href^="https://go.hpyjmp.com"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root ADS-RIGHT, :root [href^="https://mystore.com/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [href^="https://mylead.global/stl/"] > img, :root div[id^="ad_rect_"], :root .vid-present > .van_vid_carousel__padding, :root a[href^="https://syndication.optimizesrv.com/"], :root [id^="google_ads_iframe"], :root app-ad, :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://playuhd.host/"], :root a[href^="https://5hjdbfjfd5.monster/"], :root [href^="https://www.hostg.xyz/"] > img, :root .section-subheader > .section-hotel-prices-header, :root [href^="http://join.ts-dominopresley.com/"], :root [href^="https://go.affiliatexe.com/"], :root a[href^="https://meet-sexhere.com/"], :root [href^="https://go.4rabettraff.com/"], :root [href^="https://glersakr.com/"], :root a[href^="https://click.a-ads.com/"], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://gghf.mobi/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://go.currency.com/"], :root [href^="http://www.mypillow.com/"] > img, :root a[href^="//coarsewary.com/"], :root a[href^="https://a.montangop.top/"], :root [href^="https://v.investologic.co.uk/"], :root a[href^="https://dialling-abutory.com/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root div[id^="advads-"], :root div[data-role="sidebarAd"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root [id^="ad_slider"], :root [href^="https://clk.right-wing-health.com/"], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://www.chngtrack.com/"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root a[href^="https://uncensored3d.com/"], :root a[href^="https://creacdn.top-convert.com/"], :root [href^="https://go.xlrdr.com"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root gpt-ad, :root [href^="http://www.pingperfect.com/aff.php"], :root a[href^="https://scurewall.co/"], :root [name^="google_ads_iframe"], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="//ngeoziadiyc4hi2e.com/"], :root a[href^="https://go.xxxjmp.com"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root #leader-companion > a[href], :root [data-desktop-ad-id], :root [href^="https://wct.link/"], :root [href^="https://traffserve.com/"], :root a[href^="https://1startfiledownload1.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root [href="https://ourgoldguy.com/contact/"] img, :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://lnkxt.bannerator.com/"], :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root a[href^="http://hotcandyland.com/partner/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://goldcometals.com/clk.trk"], :root [data-mobile-ad-id], :root a[href^="http://affiliates.thrixxx.com/"], :root #searchResultsList > div > div[onclick$="'inline.ad'});"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-template-type="nativead"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://www.onlineusershielder.com/torrent-guard/?"], :root [data-freestar-ad], :root [data-ad-cls], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root [href^="http://join.hardcoreshemalevideo.com/"], :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root [href^="http://residenceseeingstanding.com/"], :root a[href^="https://www.adskeeper.com"], :root a[href^="//agacelebir.com/"], :root [href^="https://totlnkcl.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root .trc_rbox_border_elm .syndicatedItem, :root [class^="amp-ad-"], :root div[id^="_vdo_ads_player_ai_"], :root a[href^="http://enter.anabolic.com/track/"], :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://delivery.porn.com/"], :root a[href^="https://www.liquidfire.mobi/"], :root [href^="https://click2cvs.com/"], :root a[href^="https://a2.adform.net/"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root AMP-AD, :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root a-ad, :root [data-ad-module], :root .grid > .container > #aside-promotion, :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href^="https://spygasm.com/track?"], :root a[href^="https://agacelebir.com/"], :root a[href*="//lkstrck2.com/"], :root .plistaList > .itemLinkPET, :root [data-advadstrackid], :root [href^="https://affiliate.fastcomet.com/"] > img, :root #atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top, :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://awentw.com/"], :root [class^="div-gpt-ad"], :root a[href^="//voyeurhit.com/cs/"], :root div[id^="ad_bnr_"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://speedsupermarketdonut.com/"], :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root [data-adblockkey], :root div.fadeInDown[id$="____equal"][class$="____equal"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://odnxe.lncredlbiedate.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root a[href^="https://americafirstpolls.com/"]
+      {
+        display: none !important;
+      }
+    </style>
+    <style type="text/css">
+      :root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"], :root div[id^="yandex_ad"], :root div[id^="vuukle-ad-"], :root div[id^="rc-widget-"], :root div[id^="lazyad-"], :root div[id^="js-dfp-"], :root div[id^="gtm-ad-"], :root div[id^="gpt_ad_"], :root div[id^="gpt-ad-hor"], :root div[id^="div-gpt-"], :root div[id^="dfp-slot-"], :root div[id^="dfp-ad-"], :root div[id^="advads_"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="adngin-"], :root div[id^="adfox_"], :root div[id^="ad_script_"], :root div[id^="ad-server-"], :root div[id^="ad-gpt-"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-mpu1], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-targeting], :root div[data-ad-placeholder], :root div[class^="s-dfp-"], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root aside[id^="advads_ad_widget-"], :root aside[id^="adrotate_widgets-"], :root article.ad, :root div[class^="gpt-ad-hor"], :root ark-top-ad, :root app-advertisement, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root ad-shield-ads, :root ad-desktop-sidebar, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://www.vfreecams.com/in/?track="], :root a[href^="https://www.rabbits.webcam/?id="], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.passeura.com/"], :root a[href^="https://www.oneclickroot.com/?tap_a="] > img, :root a[href^="https://www.oboom.com/ref/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.jackery.com?aff="] > img, :root a[href^="https://www.iyalc.com/"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancegate.com/"], :root a[href^="https://www.healthrangerstore.com/"] > img, :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.clicktraceclick.com/"], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root a[href^="https://www.adsexse.com/x/"], :root a[href^="https://webroutetrk.com/"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href^="https://wantopticalfreelance.com/"], :root a[href^="https://waisheph.com/"], :root a[href^="https://uncensored.game/"], :root a[href^="https://twinrdsyn.com/"], :root a[href^="https://ttf.trmobc.com/"], :root a[href^="https://trusted-click-host.com/"], :root a[href^="https://trk.watchlivesports4k.club/"], :root a[href^="https://trk.moviesflix4k.xyz/"], :root a[href^="https://trf.bannerator.com/"], :root a[href^="https://trappist-1d.com/"], :root a[href^="https://tragency-clesburg.icu/"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://tracking.trackcasino.co/"], :root a[href^="https://tracking.comfortclick.eu/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://track.themadtrcker.com/"], :root a[href^="https://track.interactivegf.com/"], :root a[href^="https://vlnk.me/"], :root a[href^="https://track.healthtrader.com/"], :root a[href^="https://track.effiliation.com/servlet/effi.click?"] > img, :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://tupitea.co/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://tm-offers.gamingadult.com/"], :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root a[href^="https://tracking.gitads.io/"], :root a[href^="https://taghaugh.com/"], :root a[href^="https://t.mobtya.com/"], :root a[href^="https://t.hrtyj.com/"], :root a[href^="https://www.profitablecpmgate.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://s.zlink2.com/"], :root a[href^="https://reachtrgt.com/"], :root a[href^="https://queersodadults.com/"], :root a[href^="https://promo-bc.com/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href^="https://pongidsrunback.com/"], :root a[href^="https://pcm.bannerator.com/"], :root iframe[id^="google_ads_frame"], :root a[href^="https://pb-track.com/"], :root a[href^="https://partners.fxoro.com/click.php?"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://torrentsafeguard.com/?aid="], :root a[href^="https://offers.refchamp.com/"], :root a[href^="https://oackoubs.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://nutrientassumptionclaims.com/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://t.grtyi.com/"], :root a[href^="https://myusenet.xyz/"], :root a[href^="https://msecure117.com/"], :root a[href^="https://moneynow.one/"], :root div[id^="ezoic-pub-ad-"], :root a[href^="https://mk-cdn.net/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root a[href^="https://meet-to-fuck.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://look.utndln.com/"], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpazkjixes.top/"], :root a[href^="https://landing.brazzersplus.com/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://movie.download-file.org/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root a[href^="https://go.xxxiijmp.com"], :root a[href*=".zlinkm.com/"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://thaudray.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="//lambingsyddir.com/"], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.ebrokerserve.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://track.afftck.com/"], :root a[href^="https://gohere.pl/"], :root a[href^="https://go.cmrdr.com/"], :root a[href^="https://www.bebi.com"], :root a[href^="https://loboclick.com"], :root iframe[src^="https://pagead2.googlesyndication.com/"], :root a[href^="http://www.onwebcam.com/random?t_link="], :root a[href^="https://get2nesoft1.ru/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://aj1070.online/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root bottomadblock, :root a[href^="https://fertilitycommand.com/"], :root a[href^="https://bluedelivery.pro/"], :root a[href^="https://fast-redirecting.com/"], :root a[href^="https://fakelay.com/"], :root a[href^="https://medleyads.com/"], :root div[data-native-ad], :root AD-SLOT, :root a[href^="https://engine.trackingdesks.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://dianches-inchor.com/"], :root a[href^="https://go.admjmp.com/"], :root amp-fx-flying-carpet, :root a[href^="https://dfsdkkka.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="https://deliver.tf2www.com/"], :root [href^="https://www.targetingpartner.com/"], :root [href^="https://detachedbates.com/"], :root a[href^="https://deliver.ptgncdn.com/"], :root a[href^="https://datingbests.life/"], :root #kt_player > a[target="_blank"], :root a[href^="https://cpartner.bdswiss.com/"], :root a[href^="https://clixtrac.com/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://aaucwbe.com/"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://mob1ledev1ces.com/"], :root a[href^="https://explore.findanswersnow.net/"], :root a[href^="https://camfapr.com/landing/click/"], :root a[href^="https://my-movie.club/"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="https://affcpatrk.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root #topstuff > #tads, :root a[href^="https://black77854.com/"], :root a[href^="https://burpee.xyz/"], :root a[href*=".flndmyiove.net/"], :root [href^="http://join.trannies-fuck.com/"], :root [href^="http://www.fleshlightgirls.com/"], :root a[href^="https://bestdatinghere.life/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="https://m.do.co/c/"] > img, :root div[id^="sticky_ad_"], :root a[href^="https://avtub.click/assets/link.php"], :root a[href^="https://go.gldrdr.com/"], :root [id^="ad_sky"], :root a[href^="https://funkydaters.com/"], :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://as.sexad.net/"], :root a[href^="https://bestcond1tions.com/"], :root a[href^="https://takeallsoft.ru/"], :root a[href^="https://as.conjectwatson.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root [data-ez-name], :root a[href^="https://awecrptjmp.com/"], :root a[href^="https://someperceptionparade.com/"], :root a[href^="https://galaxyroms.net/?scr="], :root a[href^="https://albionsoftwares.com/"], :root display-ad-component, :root a[href^="https://ak.hetaruwg.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.alxbgo.com/"], :root a[href^="https://aff-ads.stickywilds.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://ads.cdn.live/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="http://secure.vivid.com/track/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root a[href^="https://misspkl.com/"], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root a[href^="https://adswick.com/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://ad.atdmt.com/"], :root a[href^="https://meet-sex-here.com/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://k2s.cc/pr/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.coiwqe.site/"], :root iframe[src^="http://www.adpeepshosted.com/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://ads-for-free.com/click.php?"], :root a[href^="http://www.FriendlyDuck.com/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root .trc_rbox .syndicatedItem, :root a[href^="https://1free33style.com/"], :root a[href^="http://rs-stripe.wsj.com/stripe/redirect"], :root a[href^="http://tour.mrskin.com/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root [onclick*="content.ad/"], :root a[href^="http://pityhostngco2.xyz/"], :root a[href^="http://partners.etoro.com/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci, :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="http://intent.bingads.com/"], :root a[href^="https://cagothie.net/"], :root a[href^="https://watchmygirlfriend.tv/"], :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="http://go.fpmarkets.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="http://go.247traffic.com/"], :root a[href^="http://www.advcashpro.com/aff/"], :root a[href^="http://deloplen.com/"], :root a[href^="http://d2.zedo.com/"], :root .rc-cta[data-target], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://adtrack1.club/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://bs.serving-sys.com"], :root [class^="chp_ads_block"], :root a[href^="http://betahit.click/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="//wagerprocuratorantiterrorist.com/"], :root a[href^="http://adserver.adreactor.com/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://earandmarketing.com/"], :root a[href^="http://adf.ly/?id="], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root a[href^="//syndication.dynsrvtbg.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="http://m.hsrve.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="//benoopto.com/"], :root [id^="ad-wrap-"], :root [href^="https://www.restoro.com/"], :root a[href^="//apptjmp.com/"], :root a[href^="https://dooloust.net/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root a[href="//rufflycouncil.com/"], :root a[href*="https://www.sweetdeals.com/"] img, :root div[data-native_ad], :root a[href*=".zlink9.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://dishphysics.com/"], :root a[href^="//go.xlviiirdr.com"], :root [data-dynamic-ads], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-ad-width], :root [href^="https://join.playboyplus.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="https://axdsz.pro/"], :root a[href^="http://bodelen.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://ptapjmp.com/"], :root DFP-AD, :root a[href^="http://allaptair.club/"], :root a[href^="//go.eabids.com/"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[href*="http://MyPillow.com"] > img, :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [href^="https://infinitytrk.com/"], :root [onclick^="location.href='http://www.reimageplus.com"], :root a[href^="https://pl.premium4kflix.website/"], :root [id^="chp_ads_block"], :root a[href^="https://go.julrdr.com/"], :root a[href^="//chrif8kdstie.com/"], :root [id^="section-ad-banner"], :root .commercial-unit-mobile-top > div[data-pla="1"], :root a[href^="https://www.sweetdeals.com"], :root a[href^="https://track.bruceads.com/"], :root a[href^="https://t.aslnk.link/"], :root [href^="https://zstacklife.com/"] img, :root [data-ad-manager-id], :root a[href^="https://fleshlight.sjv.io/"], :root div[id^="zergnet-widget"], :root [href^="https://www.mystore.com/"] > img, :root div[id^="ad-position-"], :root a[href^="http://adultfriendfinder.com/go/page/landing"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root a[href^="http://bc.vc/?r="], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://syndication.exoclick.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://go.trackitalltheway.com/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://www.awin1.com/cread.php?awinaffid="], :root a[href^="//thaudray.com/"], :root a[href*=".trust.zone"], :root a[href^="http://trk.mdrtrck.com/"], :root [href^="https://shrugartisticelder.com"], :root div[id^="crt-"][style], :root a[href^="https://s.zlink1.com/"], :root a[href^="http://adultgames.xxx/"], :root a[href^="https://traffic.bannerator.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root div[id^="ad-inserter-"], :root .scroll-fixable.rail-right > .deals-rail, :root a[href^="https://see.kmisln.com/"], :root [href^="https://routewebtk.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://mmwebhandler.aff-online.com/"], :root [href^="https://r.kraken.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root .commercial-unit-mobile-top > .v7hl4d, :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [href^="https://stvkr.com/"], :root a[href^="https://go.hpyjmp.com"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root ADS-RIGHT, :root [href^="https://mystore.com/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [href^="https://mylead.global/stl/"] > img, :root div[id^="ad_rect_"], :root .vid-present > .van_vid_carousel__padding, :root a[href^="https://syndication.optimizesrv.com/"], :root [id^="google_ads_iframe"], :root app-ad, :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://playuhd.host/"], :root a[href^="https://5hjdbfjfd5.monster/"], :root [href^="https://www.hostg.xyz/"] > img, :root .section-subheader > .section-hotel-prices-header, :root [href^="http://join.ts-dominopresley.com/"], :root [href^="https://go.affiliatexe.com/"], :root a[href^="https://meet-sexhere.com/"], :root [href^="https://go.4rabettraff.com/"], :root [href^="https://glersakr.com/"], :root a[href^="https://click.a-ads.com/"], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://gghf.mobi/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://go.currency.com/"], :root [href^="http://www.mypillow.com/"] > img, :root a[href^="//coarsewary.com/"], :root a[href^="https://a.montangop.top/"], :root [href^="https://v.investologic.co.uk/"], :root a[href^="https://dialling-abutory.com/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root div[id^="advads-"], :root div[data-role="sidebarAd"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root [id^="ad_slider"], :root [href^="https://clk.right-wing-health.com/"], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://www.chngtrack.com/"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root a[href^="https://uncensored3d.com/"], :root a[href^="https://creacdn.top-convert.com/"], :root [href^="https://go.xlrdr.com"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root gpt-ad, :root [href^="http://www.pingperfect.com/aff.php"], :root a[href^="https://scurewall.co/"], :root [name^="google_ads_iframe"], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="//ngeoziadiyc4hi2e.com/"], :root a[href^="https://go.xxxjmp.com"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root #leader-companion > a[href], :root [data-desktop-ad-id], :root [href^="https://wct.link/"], :root [href^="https://traffserve.com/"], :root a[href^="https://1startfiledownload1.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root [href="https://ourgoldguy.com/contact/"] img, :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://lnkxt.bannerator.com/"], :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root a[href^="http://hotcandyland.com/partner/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://goldcometals.com/clk.trk"], :root [data-mobile-ad-id], :root a[href^="http://affiliates.thrixxx.com/"], :root #searchResultsList > div > div[onclick$="'inline.ad'});"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-template-type="nativead"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://www.onlineusershielder.com/torrent-guard/?"], :root [data-freestar-ad], :root [data-ad-cls], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root [href^="http://join.hardcoreshemalevideo.com/"], :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root [href^="http://residenceseeingstanding.com/"], :root a[href^="https://www.adskeeper.com"], :root a[href^="//agacelebir.com/"], :root [href^="https://totlnkcl.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root .trc_rbox_border_elm .syndicatedItem, :root [class^="amp-ad-"], :root div[id^="_vdo_ads_player_ai_"], :root a[href^="http://enter.anabolic.com/track/"], :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://delivery.porn.com/"], :root a[href^="https://www.liquidfire.mobi/"], :root [href^="https://click2cvs.com/"], :root a[href^="https://a2.adform.net/"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root AMP-AD, :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root a-ad, :root [data-ad-module], :root .grid > .container > #aside-promotion, :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href^="https://spygasm.com/track?"], :root a[href^="https://agacelebir.com/"], :root a[href*="//lkstrck2.com/"], :root .plistaList > .itemLinkPET, :root [data-advadstrackid], :root [href^="https://affiliate.fastcomet.com/"] > img, :root #atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top, :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://awentw.com/"], :root [class^="div-gpt-ad"], :root a[href^="//voyeurhit.com/cs/"], :root div[id^="ad_bnr_"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://speedsupermarketdonut.com/"], :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root [data-adblockkey], :root div.fadeInDown[id$="____equal"][class$="____equal"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://odnxe.lncredlbiedate.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root a[href^="https://americafirstpolls.com/"]
+      {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body class="dark:bg-secondary bg-white overflow-hidden">
+    <div id="app" data-v-app="">
+      <div
+        class="main-html flex h-screen w-screen flex-col overflow-hidden"
+        data-v-6e103bc3=""
+      >
+        <div class="relative grow overflow-hidden" data-v-6e103bc3="">
+          <div
+            class="flex h-full w-full flex-col overflow-hidden"
+            data-v-6e103bc3=""
+          >
+            <nav
+              class="border-secondary-lighter bg-secondary-lighter py-0"
+              data-v-1e51cc81=""
+            >
+              <div class="main-navbar z-50" data-v-1e51cc81="">
+                <div class="flex w-1/3 items-center" data-v-1e51cc81="">
+                  <div class="pr-5" data-v-1e51cc81=""></div>
+                  <div class="hidden md:block" data-v-1e51cc81="">
+                    <div class="nav-group" data-v-1e51cc81="">
+                      <a
+                        href="http://127.0.0.1:5500/#"
+                        class="btn btn-link capitalize hover:bg-secondary-lightest hover:!text-white"
+                        data-v-1e51cc81=""
+                        >Explore</a
+                      ><a
+                        href="http://127.0.0.1:5500/#"
+                        class="btn btn-link !ml-5 capitalize hover:bg-secondary-lightest hover:!text-white"
+                        data-v-1e51cc81=""
+                        >Browse</a
+                      >
+                      <div
+                        class="relative !ml-2 hidden text-left md:inline-block"
+                        data-v-1e51cc81=""
+                      >
+                        <div
+                          class="flex items-center md:gap-5"
+                          data-v-1e51cc81=""
+                        ></div>
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hidden grow justify-center md:flex"
+                  data-v-1e51cc81=""
+                >
+                  <div class="w-full max-w-lg lg:max-w-xs" data-v-1e51cc81="">
+                    <div class="search" data-v-76fba9ef="" data-v-1e51cc81="">
+                      <label for="search" class="sr-only" data-v-76fba9ef=""
+                        >Search</label
+                      >
+                      <form class="relative" data-v-76fba9ef="">
+                        <div class="relative" data-v-76fba9ef="">
+                          <div
+                            class="absolute left-2.5 top-1/2 -translate-y-1/2"
+                            data-v-76fba9ef=""
+                          >
+                            <svg
+                              aria-hidden="true"
+                              width="13"
+                              height="13"
+                              viewBox="0 0 13 13"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              data-v-76fba9ef=""
+                            >
+                              <path
+                                d="M7.03998 0.530029C4.14998 0.530029 1.80498 2.87503 1.80498 5.76503C1.80498 7.03003 2.25498 8.19503 3.00498 9.10003L0.72998 11.375L1.81998 12.465L4.15498 10.13C4.98498 10.68 5.97498 11 7.04498 11C9.93498 11 12.28 8.65503 12.28 5.76503C12.28 2.87503 9.93498 0.530029 7.04498 0.530029H7.03998ZM7.03998 9.51003C4.97498 9.51003 3.29998 7.83503 3.29998 5.77003C3.29998 3.70503 4.97498 2.03003 7.03998 2.03003C9.10498 2.03003 10.78 3.70503 10.78 5.77003C10.78 7.83503 9.10498 9.51003 7.03998 9.51003Z"
+                                fill="white"
+                                data-v-76fba9ef=""
+                              ></path>
+                            </svg>
+                          </div>
+                          <input
+                            id="search-input"
+                            autocomplete="off"
+                            class=""
+                            spellcheck="false"
+                            type="search"
+                            placeholder="Search"
+                            data-v-76fba9ef=""
+                          />
+                        </div>
+                        <div
+                          class="relative h-auto"
+                          data-v-76fba9ef=""
+                          style="display: none"
+                        >
+                          <div
+                            class="results-container z-50 w-full overflow-hidden pt-1 absolute top-0 left-0"
+                            data-v-76fba9ef=""
+                          >
+                            <div
+                              class="results h-full overflow-auto rounded bg-secondary-light"
+                              data-v-76fba9ef=""
+                            >
+                              <div
+                                class="overflow-hidden shadow-sm"
+                                data-v-76fba9ef=""
+                              >
+                                <!---->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative w-1/3 grow space-x-3 pl-3 pr-1 lg:flex-none"
+                  data-v-1e51cc81=""
+                >
+                  <div
+                    class="absolute top-0 right-0 z-50 flex w-full items-center space-x-3 rounded bg-secondary py-0.5 pl-3"
+                    data-v-1e51cc81=""
+                    style="display: none"
+                  >
+                    <div class="relative grow" data-v-1e51cc81=""><!----></div>
+                    <button type="button" data-v-1e51cc81="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        class="h-7 w-7"
+                        data-v-1e51cc81=""
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="flex items-center justify-end space-x-2"
+                    data-v-1e51cc81=""
+                  >
+                    <div
+                      class="relative inline-block text-left"
+                      data-v-1e51cc81=""
+                    >
+                      <div
+                        class="flex items-center md:gap-5"
+                        data-v-1e51cc81=""
+                      >
+                        <!---->
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!----><!----><!---->
+          </div>
+        </div>
+        <div data-v-6e103bc3="">
+          <div
+            class="mobile-nav flex w-screen items-center bg-secondary-lighter p-3 text-sm lg:hidden"
+            data-v-6e103bc3=""
+          >
+            <a
+              href="#"
+              class="router-link-active router-link-exact-active block w-full text-center"
+              data-v-6e103bc3=""
+              aria-current="page"
+              ><svg
+                class="inline-block"
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-v-6e103bc3=""
+              ></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!----><!---->
+    </div>
+
+    <script defer="" src="./Downbadplanet_files/gtm.js.download"></script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
